@@ -1,8 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quote Creation App
 
-## Getting Started
+A responsive web application for creating and viewing quotes with images. Built with Next.js, this application allows users to login, view quotes from other users, and create their own quotes with images.
 
-First, run the development server:
+## 🌟 Features
+
+- User authentication with OTP
+- Paginated quote listing
+- Image upload functionality
+- Quote creation with text overlay on images
+- Responsive design optimized for mobile devices
+- Real-time updates
+
+## 🚀 Live Demo
+
+[Visit the live application](#) <!-- Add your deployed application URL here -->
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** Next.js 14
+- **Styling:** Tailwind CSS
+- **Authentication:** Custom JWT
+- **Image Handling:** Next.js Image Component
+- **State Management:** React Context API
+- **API Integration:** Axios
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have installed:
+
+- Node.js (v18 or higher)
+- npm or yarn or pnpm
+
+## ⚙️ Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/prathamrohatgi26/kutumb-assignment.git
+```
+
+2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+## 🚀 Running the Application
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +59,29 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Application Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Login Page (`/`)
 
-## Learn More
+- Username input
+- OTP input (default: 1234)
+- Submit button
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Quote List Page (`/quotes`)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- list of quotes
+- Floating action button for quote creation
+- Image with text overlay
+- User information display
+- Infinite scroll pagination
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Quote Creation Page (`/quotes/create`)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Text input for quote
+- Image upload functionality
+- Preview functionality
+- Submit button
